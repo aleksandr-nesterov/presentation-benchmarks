@@ -1,0 +1,1 @@
+java -XX:-RestrictContended -cp jol-cli-0.9-full.jar:target/presentation-benchmarks-1.0.jar org.openjdk.jol.Main internals org.ing.support.ContendedAtomicLong 

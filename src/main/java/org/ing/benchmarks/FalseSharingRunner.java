@@ -15,7 +15,7 @@ public class FalseSharingRunner {
 
     public static void main(String[] args) throws InterruptedException {
         for (int i = 0; i < THREADS_NUMBER; i++) {
-            longs[i] = new AtomicLong();
+            longs[i] = new PaddedAtomicLong();
         }
         long nanos = System.nanoTime();
         Thread[] thread = new Thread[THREADS_NUMBER];
